@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="pixel"
+          fetch="https://github.com/PixelExperience-P"
+          revision="pie"
+    review="gerrit.pixelexperience.org" />
+  <!-- CodeAurora additions -->
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="pixel" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="pixel" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pixel" />
+  <project path="external/brctl" name="external_brctl" remote="pixel" />
+  <project path="external/connectivity" name="external_connectivity" remote="pixel" />
+  <project path="external/ebtables" name="external_ebtables" remote="pixel" />
+  <project path="external/json-c" name="external_json-c" remote="pixel" />
+  <project path="system/qcom" name="system_qcom" remote="pixel" />
+  <project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="pixel" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="pixel" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="pixel">
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+  </project>
+  <project path="vendor/qcom/opensource/rcs-service" name="vendor_qcom_opensource_rcs-service" remote="pixel" />
+
+</manifest>
